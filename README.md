@@ -1,4 +1,3 @@
-````
 # echo_c_from_scratch
 
 Small C implementation of a simple `echo`-like program for learning C and CLI basics.
@@ -170,4 +169,12 @@ int main(int argc, const char *argv[]) {
 * I handled a common bug: accidentally assigning inside the `if` (e.g., `if (i = argc - 1)`) — the code above is correct and safe.
 * The escape interpreter is kept simple and deterministic.
 
----
+## Build with Makefile
+
+To compile and test automatically:
+
+```bash
+make        # build myecho
+make test   # run basic validation
+make clean  # remove compiled binaries
+
